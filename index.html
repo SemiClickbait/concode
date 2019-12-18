@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Concode</title>
+</head>
+
+<body>
+<h1>Concode</h1>
+Coming Soon
+</body>
+
+<script>
+(function(d,t) {
+  var BASE_URL = 'https://anglechat.herokuapp.com';
+  var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src= BASE_URL + "/packs/js/sdk.js";
+  s.parentNode.insertBefore(g,s);
+  g.onload=function(){
+    window.chatwootSDK.run({
+      websiteToken: 'pMaJXUDpr7rYgsLjTVJVtkz1',
+      baseUrl: BASE_URL
+    })
+  }
+})(document,"script");
+</script>
+</html>
